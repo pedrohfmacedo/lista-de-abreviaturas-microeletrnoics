@@ -184,7 +184,8 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 ***
 
 ### Fundamentos de Designs Digitais <a name = "idDD"></a>
-| Sigla | Nome completo | Descrição |
+| Sigla | Nome | Descrição |
+|-------|------|-----------|
 |_BCD_|  |  |
 |_MSB_|  |  |
 |_Gray_|  |  |
