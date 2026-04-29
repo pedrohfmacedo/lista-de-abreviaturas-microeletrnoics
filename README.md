@@ -3,11 +3,12 @@
 Lista de abreviaturas utilizados no meio da microeletrônica;
 
 **Índice**
-1.[Fundamentos](#idCMOS)
-2.[VDSI](#idVDSI)
-3.[VDSM](#idVDSM)
-4.[Digital_Design](#idDD)
-5.[ASICs](#idASIC)
+
+1. [Fundamentos](#idCMOS)  
+2. [VDSI](#idVDSI)  
+3. [VDSM](#idVDSM)  
+4. [Digital_Design](#idDD)  
+5. [ASICs](#idASIC)  
 
 ***
 
