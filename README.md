@@ -12,7 +12,7 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 
 ***
 
-### Nos Fundamentos de Mosfet / CMOS<a name = "idCMOS"></a>
+### Em Fundamentos de semicondutores (MOSFET) <a name = "idCMOS"></a>
 | Sigla/Termo | Nome completo | Descrição |
 |------|--------------|----------|
 |_Band Gap_|  |  |
@@ -62,7 +62,7 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 
 ***
 
-### VLSI <a name = "idVLSI"></a>
+### Em VLSI <a name = "idVLSI"></a>
 | Sigla | Nome completo | Descrição |
 |------|--------------|----------|
 |_VLSI_| Very Large-Scale Integration |  |
@@ -115,15 +115,16 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 
 ***
 
-### VDSM <a name = "idVDSM"></a>
+### Em VDSM <a name = "idVDSM"></a>
 | Sigla | Nome completo | Descrição |
 |------|--------------|----------|
-|_VDSM_|  |  |
-|_Socs_|  |  |
-|_TDD_|  |  |
-|_BBD_|  |  |
-|_PBD_|  |  |
-|_DSM_|  |  |
+|_VDSM_| Very deep submicron |  |
+|_SoCs_| System on a Chip/ System-on-Chip |  |
+|_TDD_| Time Driven Design |  |
+|_BBD_| Blocked based Design |  |
+|_PBD_| Platform based Design |  
+|_DVT_| Design Validation Test |  |
+|_DSM_| Deep submicron | Refere-se a tecnologias de fabricação com dimensões bem menores que 1 micrômetro |
 |_Timing Path_|  |  |
 |_Clock group_|  |  |
 |_Net timing arcs_|  |  |
@@ -136,8 +137,8 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 |_Hold time_|  |  |
 |_Signal slew_|  |  |
 |_Clock latency_|  |  |
-|_HVT_|  |  |
-|_RVT_|  |  |
+|_HVT_| High Threshold Voltage |  |
+|_RVT_| Regular Threshold Voltage |  |
 |_Clock slew_|  |  |
 |_Clock jitter_|  |  |
 |_Recovery time_|  |  |
@@ -156,26 +157,27 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 |_Capactive Crosstalk_|  |  |
 |_Resistive Parasitcs_|  |  |
 |_IR Drop_|  |  |
-|_I/O_|  |  |
+|_I/O_| Input/Output |  |
 |_IR noise_|  |  |
-|_GAL_|  |  |
-|_DET_|  |  |
+|_GAL_| Global Asynchronous logic |  |
+|_DET_| Double edge triggered |  |
 |_By pass_|  |  |
-|_CDC_|  |  |
+|_CDC_| Clock Domain Crossover |  |
 |_Metastability_|  |  |
-|_OCV_|  |  |
+|_PVT_| Process Voltage Temperature |  |
+|_OCV_| On-chip Variation |  |
 |_Electromigration_|  |  |
-|_MTTF_|  |  |
+|_MTTF_| Mean time to failure |  |
 |_Vold_|  |  |
 |_Hillock_|  |  |
-|_NDR_|  |  |
-|_BJT_|  |  |
-|_PNPN_|  |  |
-|_SOI_|  |  |
-|_FEOL_|  |  |
-|_BEOL_|  |  |
+|_NDR_| Nondefault rules |  |
+|_BJT_| Bipolar Junction |  |
+|_PNPN_| Junction PNPN |  |
+|_SOI_| Silicon on insulator |  |
+|_FEOL_| Front-end line |  |
+|_BEOL_| Back-end of line |  |
 |_antenna effect_|  |  |
-|_CMP_|  |  |
+|_CMP_| Chemical mechanical planarization |  |
 |_Qor_| Quality of results |  |
 |_Qos_| Quality of Silicon |  |
 |_Tie-high_|  |  |
@@ -186,20 +188,22 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 ### Fundamentos de Designs Digitais <a name = "idDD"></a>
 | Sigla | Nome | Descrição |
 |-------|------|-----------|
-|_BCD_|  |  |
-|_MSB_|  |  |
+|_BCD_| Binary-Coded Decimal |  |
+|_MSB_| Most Significant Bit |  |
+|_LSB_| Least Significant Bit |  |
 |_Gray_|  |  |
 |_Karnaugh maps_|  |  |
-|_SOM_|  |  |
-|_POM_|  |  |
+|_SOM_| Product of maxterms |  |
+|_POM_| Sum of minterms |  |
 |_Minterm_|  |  |
 |_Maxterm_|  |  |
-|_SOP_|  |  |
+|_SOP_| Sum of Products |  |
+|_POS_| Product of Sum |  |
 |_Cut Edge_|  |  |
-|_BDD_|  |  |
-|_OBDD_|  |  |
-|_DAG_|  |  |
-|_ROBDD_|  |  |
+|_BDD_| Binary Decision Diagram |  |
+|_OBDD_| Ordered Binary Decision Diagram |  |
+|_DAG_| Directed acyclic graph |  |
+|_ROBDD_| Reduced Ordered Binary Decision Diagram |  |
 |_Quinte-McCluskey Approach_|  |  |
 |_lE_| Logical Effort |  |
 |_Block Diagram_|  |  |
@@ -215,8 +219,8 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 |_minimum clock_|  |  |
 |_maximum clock_|  |  |
 |_Clock gating_|  |  |
-|_CU_|  |  |
-|_PU_|  |  |
+|_CU_| Control Unit |  |
+|_PU_| Processing Unit |  |
 |_Propagation delay_|  |  |
 |_Aperture time_|  |  |
 |_Contamination_|  |  |
@@ -224,7 +228,7 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 
 ***
 
-### ASIC <a name = "idASIC"></a>
+### Em ASIC designs <a name = "idASIC"></a>
 
 | Sigla | Nome | Descrição |
 |-------|------|-----------|
@@ -233,12 +237,11 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 |_Pads_|  |  |
 |_Netlist_|  |  |
 |_Gate level_|  |  |
-|_DoD_|  |  |
-|_VHSIC_|  |  |
-|_VHDL_|  |  |
+|_VHSIC_| Very High-speed integrated circuit |  |
+|_VHDL_| VHSIC Hardware Description Language) |  |
 |_ports_|  |  |
 |_architecture_|  |  |
-|_DUT_|  |  |
+|_DUT_| Device Under Test |  |
 |_stimulus_|  |  |
 |_Assertions_|  |  |
 |_semaphore_|  |  |
@@ -246,32 +249,37 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 |_Event_|  |  |
 |_Testbench_|  |  |
 |_Constraints_|  |  |
-|_TBs_|  |  |
-|_DUV_|  |  |
-|_CBS_|  |  |
-|_EBS_|  |  |
+|_TBs_| Testbenchs (wrappers) |  |
+|_DUV_| Device under verification |  |
+|_CBS_| Cycled-based simulators |  |
+|_EBS_| Event-based simulators |  |
+|_DSP_| Digital Signal processing |
+|_OVI_| Open Verilog International ||
 |_TVM_|  |  |
-|_ICE_|  |  |
-|_PLI_|  |  |
-|_VCD_|  |  |
-|_ABV_|  |  |
-|_FIFO_|  |  |
-|_OVL_|  |  |
-|_DVE_|  |  |
-|_SDF_|  |  |
-|_PDEF_|  |  |
+|_ICE_| In-Circuit Emulator |  |
+|_LRM_| Verilog Language Reference Manual||
+|_PLI_| Programming Language Interface |  |
+|_VCD_| Value change dump |  |
+|_ABV_| Assertion based Verification |  |
+|_FIFO_| First in First Out |  |
+|_OVL_| Open Verification library |  |
+|_DVE_| Discovery Visualization Environment |  |
+|_SDF_| Standard Delay Format |  |
+|_PDEF_| Physical Definition File |  |
 |_DFT_| Design for test |  |
-|_PI_| Pin in |  |
-|_PO_| Pin Out |  |
-|_BIST_|  |  |
-|_LFSR_|  |  |
-|_BILBO_|  |  |
-|_TAP_|  |  |
-|_ATPG_|  |  |
-|_ERC_|  |  |
+|_PI_| Primary input |  |
+|_PO_| Primary output |  |
+|_LSSD_| Level-Sensitive Scan Design||
+|_BIST_| Built-in Self-Test |  |
+|_LFSR_| Linear Feedback Shift Register |  |
+|_BILBO_| Built-In Logic Block Observer |  |
+|_JTAG_|Joint Test Action Group||
+|_TAP_| Test Access Port |  |
+|_ATPG_| Automatic Test Pattern Generation |  |
+|_ERC_| Electrical Rule Check |  |
 |_Signoff_|  |  |
-|_LPE_|  |  |
-|_GDSOUT_|  |  |
-|_PDV_|  |  |
+|_LPE_| Layout Parasitc Extraction |  |
+|_GDSOUT_| GDSII Output |  |
+|_PDV_| Physical Design Verification |  |
 
 ***
