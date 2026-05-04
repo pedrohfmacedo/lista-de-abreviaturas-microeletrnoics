@@ -4,7 +4,7 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 
 **Índice**
 
-1. [Fundamentos](#idCMOS)  
+1. [Fundamentos Semicondutores](#idCMOS)  
 2. [VDSI](#idVDSI)  
 3. [VDSM](#idVDSM)  
 4. [Digital_Design](#idDD)  
@@ -66,7 +66,7 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 | Sigla | Nome completo | Descrição |
 |------|--------------|----------|
 |_VLSI_| Very Large-Scale Integration |  |
-|_EDA_|  |  |
+|_EDA_| Electronic Design Automation | São os conjuntos de ferramentas/software utilizados ao longo de todo fluxo de desenvolvimento da elaboração do CI |
 |_SDC_| Synopsis Design Constraints |  |
 |_GTECH_| Generic Technology |  |
 |_NLDM_| Non-Linear Delay Model |  |
@@ -234,7 +234,7 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 |-------|------|-----------|
 |_ASIC_| Application-Specific Integrated Circuit | CI projetado com finalidade específica |
 |_Package_|  |  |
-|_Pads_|  |  |
+|_Pads_|  | São as bordas do chips usados para conectar sinais de entrada/saída, VDD/GND, comunicações, etc. |
 |_Netlist_|  |  |
 |_Gate level_|  |  |
 |_VHSIC_| Very High-speed integrated circuit |  |
@@ -255,7 +255,7 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 |_EBS_| Event-based simulators |  |
 |_DSP_| Digital Signal processing |
 |_OVI_| Open Verilog International ||
-|_TVM_|  |  |
+|_TVM_| Test Vector Memory | Memória que armazena vetores de teste, usados junto com ATPG e BIST |
 |_ICE_| In-Circuit Emulator |  |
 |_LRM_| Verilog Language Reference Manual||
 |_PLI_| Programming Language Interface |  |
