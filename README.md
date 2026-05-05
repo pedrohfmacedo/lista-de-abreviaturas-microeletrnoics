@@ -16,6 +16,7 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 | Sigla/Termo | Nome completo | Descrição |
 |------|--------------|----------|
 |_Band Gap_|  |  |
+|_Band Theory_|  |  |
 |_Polycrystalline_|  |  |
 |_Layer_|  |  |
 |_Mask_|  |  |
@@ -47,8 +48,8 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 |_Tphl_| Propagation Delay Time High-to-Low |  |
 |_Tplh_| Propagation Delay Time Low-to-high |  |
 | TG | Transmission gate | |
-|_Fan-in_|  |  |
-|_Fan-out_|  |  |
+|_Fan-in_|  | São os números de entradas de uma porta, que afeta a resistência. Menor fan-in, menor o delay |
+|_Fan-out_|  | São os números de saídas de uma porta, que afeta a capacitância. Maior fan-out, maior a carga, delay. |
 |_Metastable_|  |  |
 |_NORA_| NO-RAce Logic |  |
 |_OTP_| One-time programmable |  |
@@ -59,6 +60,7 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 |_PROM_| Programmable read-only memory |  |
 |_DFM_| Design of Manufacturability |  |
 |_CAD_| Computer-Aided Design |  |
+|_PDK_| Process Design Kit | Tecnologia fornecida pela foundry que consiste em um conjunto de arquivos caracterizados por ela |
 
 ***
 
@@ -68,19 +70,19 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 |_VLSI_| Very Large-Scale Integration |  |
 |_EDA_| Electronic Design Automation | São os conjuntos de ferramentas/software utilizados ao longo de todo fluxo de desenvolvimento da elaboração do CI |
 |_SDC_| Synopsis Design Constraints |  |
-|_GTECH_| Generic Technology |  |
-|_NLDM_| Non-Linear Delay Model |  |
-|_CCS_| Composite Current Source |  |
+|_GTECH_| Generic Technology | Biblioteca padrão de celúlas genéricas da EDA utilizadas na etapa intermediária da síntese |
+|_NLDM_| Non-Linear Delay Model | Modelo mais antigo da .ln (less acurate), modelo não linear. |
+|_CCS_| Composite Current Source | Modelo mais antigo da .ln (more acurate) |
 |_NLPM_| Natural language programming linter  |  |
 |_LVF_| Liberty variation format  |  |
-|_STA_| Static timing Analysis |  |
-|_DTA_| Dynamic timing Analysis |  |
+|_STA_| Static timing Analysis | Técnica para verificar o timing do circuito digital (fechou ou não?), rápido e exaustivo |
+|_DTA_| Dynamic timing Analysis | Técnica para analisar timing do cricuito utilizando vetores de testes, testes específicos, mais lento. |
 |_HDL_| Hardware Description Language |  |
 |_TLF_| Timing Library Format |  |
 |_LEF_| Library Exchange Format  |  |
 |_DSCL_| Digital Standard Cell Library |  |
-|_GDSII_| Graphic Design System II |  |
-|_GDSI_| Graphic Design System I |  |
+|_GDSII_| Graphic Design System II | É o formato padrão de arquivo usado para representar o layout físico (Atual)|
+|_GDSI_| Graphic Design System I | É o formato padrão de arquivo usado para representar o layout físico (Antigo/obsoleto) |
 |_DEF_| Design Exchange Format |  |
 |_ASCII_| American Standard Code for Information Interchange  |  |
 |_LIB_| Liberty Timing File |  |
@@ -101,7 +103,7 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 |_CTS_| Clock Tree Synthesis |  |
 |_PPA_| Power, Performance, and Area |  |
 |_OASIS_| Open Artwork system intechange standard |  |
-|_UPF_| Unified Power Format |  |
+|_UPF_| Unified Power Format | Literalmente, um formato/padrão para descrever como a energia pode-se organizar dentro de um CI |
 |_IPs_| ntellectual Propert |  |
 |_Floorplan_|  |  |
 |_Placement_|  |  |
@@ -118,25 +120,27 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 ### Em VDSM <a name = "idVDSM"></a>
 | Sigla | Nome completo | Descrição |
 |------|--------------|----------|
-|_VDSM_| Very deep submicron |  |
+|_VDSM_| Very deep submicron | Uma categoria do VLSI |
 |_SoCs_| System on a Chip/ System-on-Chip |  |
 |_TDD_| Time Driven Design |  |
 |_BBD_| Blocked based Design |  |
 |_PBD_| Platform based Design |  
 |_DVT_| Design Validation Test |  |
 |_DSM_| Deep submicron | Refere-se a tecnologias de fabricação com dimensões bem menores que 1 micrômetro |
-|_Timing Path_|  |  |
-|_Clock group_|  |  |
+|_Timing Path_|  | É um caminho de ponto a ponto |
+|_Clock group_|  | Grupo de caminhos diferentes do/de sinal/sinais de clock |
+|_Slack_|  | Diferença entre o tempo necessário e o tempo de checagem (quando negativo = deu ruim) |
 |_Net timing arcs_|  |  |
 |_Net delay_|  |  |
 |_Cell Delay_|  |  |
 |_Transparente latch_|  |  |
 |_flip-flop_|  |  |
 |_Pusle width_|  |  |
-|_Setup time_|  |  | 
-|_Hold time_|  |  |
-|_Signal slew_|  |  |
-|_Clock latency_|  |  |
+|_Setup time_|  | Intervalo de tempo antes da borda de clock no qual o dado deve-se manter estável para não ocorrer metaestabilidade | 
+|_Hold time_|  | Intervalo de tempo depois da borda de clock no qual o dado deve-se manter estável para não ocorrer metaestabilidade |
+|_Signal slew_|  | Tempo necessário para ocorrer uma transação |
+|_Pulse Width_|  | Tempo entre o estado atibvo e inativo do clock |
+|_Clock latency_|  | Diferença entre a skew e slew |
 |_HVT_| High Threshold Voltage |  |
 |_RVT_| Regular Threshold Voltage |  |
 |_Clock slew_|  |  |
@@ -147,15 +151,15 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 |_Clock path_|  |  |
 |_Clock gating path_|  |  |
 |_Asynchronus path_|  |  |
-|_Critical path_|  |  |
+|_Critical path_|  | O caminho mais lento do circuito, usado para determinar a frequência máxima do circuito. |
 |_False path_|  |  |
 |_Single cycle path_|  |  |
 |_Multi Cycle path_|  |  |
 |_Launch path_|  |  |
 |_Capture path_|  |  |
 |_Shortest path_|  |  |
-|_Capactive Crosstalk_|  |  |
-|_Resistive Parasitcs_|  |  |
+|_Capactive Crosstalk_|  | Interferência entre dois sinais próximos, causada pela capacitância parasita entre trilhas/fios no circuito. |
+|_Resistive Parasitcs_|  | Resistência parasita relacionado na distribuição da fonte de alimentação. |
 |_IR Drop_|  |  |
 |_I/O_| Input/Output |  |
 |_IR noise_|  |  |
@@ -163,8 +167,9 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 |_DET_| Double edge triggered |  |
 |_By pass_|  |  |
 |_CDC_| Clock Domain Crossover |  |
-|_Metastability_|  |  |
-|_PVT_| Process Voltage Temperature |  |
+|_Metastability_|  | É a instabilidade do sinal em circuitos sequenciais quando o dado muda muito próximo da borda do clock |
+|_PVT_| Process Voltage Temperature | Representa as variações físicas e operacionais que afetam o comportamento de um circuito integrado, caracterizado no PDK |
+|_Corners_| Process Voltage Temperature | Corners são combinações específicas de PVT (Process, Voltage, Temperature) usadas para analisar o comportamento de um circuito nas condições extremas (pior e melhor caso). |
 |_OCV_| On-chip Variation |  |
 |_Electromigration_|  |  |
 |_MTTF_| Mean time to failure |  |
@@ -176,12 +181,13 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 |_SOI_| Silicon on insulator |  |
 |_FEOL_| Front-end line |  |
 |_BEOL_| Back-end of line |  |
-|_antenna effect_|  |  |
+|_antenna effect_|  | é um problema de fabricação em circuitos integrados onde cargas elétricas acumuladas durante o processo (plasma) se acumulam em interconexões metálicas e podem danificar o óxido de gate dos transistores. |
 |_CMP_| Chemical mechanical planarization |  |
 |_Qor_| Quality of results |  |
 |_Qos_| Quality of Silicon |  |
 |_Tie-high_|  |  |
 |_Tie-low_|  |  |
+|_Tie-Cell_|  | Células padrão usadas para constantes lógicas (1/VDD ou 0/GROUND) |
 
 ***
 
@@ -218,7 +224,8 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 |_FSM_| Finite State Machine |  |
 |_minimum clock_|  |  |
 |_maximum clock_|  |  |
-|_Clock gating_|  |  |
+|_Clock gating_|  | Técnica usada em circuitos digitais para economizar energia, desligando sinal de clock em partes do circuito. |
+|_ICG_| Integrated Clock Gating | É uma célula padrão (standard cell) usada em microeletrônica para implementar clock gating de forma segura e sem glitches. |
 |_CU_| Control Unit |  |
 |_PU_| Processing Unit |  |
 |_Propagation delay_|  |  |
@@ -241,6 +248,7 @@ Lista de abreviaturas utilizados no meio da microeletrônica;
 |_VHDL_| VHSIC Hardware Description Language) |  |
 |_ports_|  |  |
 |_architecture_|  |  |
+|_microarchitecture_|  |  |
 |_DUT_| Device Under Test |  |
 |_stimulus_|  |  |
 |_Assertions_|  |  |
